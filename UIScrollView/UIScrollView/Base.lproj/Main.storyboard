@@ -14,25 +14,56 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MFM-gd-zg6">
-                                <rect key="frame" x="48" y="100" width="240" height="224"/>
-                                <subviews>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uBB-W4-NDK">
-                                        <rect key="frame" x="41" y="31" width="51" height="31"/>
-                                    </switch>
-                                </subviews>
+                                <rect key="frame" x="0.0" y="58" width="375" height="471"/>
+                                <color key="backgroundColor" red="0.48324868409999999" green="1" blue="0.96563840909999998" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bq7-x1-ip5">
+                                <rect key="frame" x="6" y="20" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.48324868409999999" green="1" blue="0.96563840909999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="最左"/>
+                                <connections>
+                                    <action selector="left:" destination="BYZ-38-t0r" eventType="touchUpInside" id="djm-1c-SmZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gQ-zv-Cox">
+                                <rect key="frame" x="62" y="20" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.48324868409999999" green="1" blue="0.96563840909999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="最上"/>
+                                <connections>
+                                    <action selector="top:" destination="BYZ-38-t0r" eventType="touchUpInside" id="phH-pd-mPd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jT1-m0-zuh">
+                                <rect key="frame" x="255" y="570" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.48324868409999999" green="1" blue="0.96563840909999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="最右"/>
+                                <connections>
+                                    <action selector="right:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7cb-TU-3Re"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZU-Az-7Xj">
+                                <rect key="frame" x="332" y="570" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.48324868409999999" green="1" blue="0.96563840909999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="最下"/>
+                                <connections>
+                                    <action selector="bottom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jee-Nl-QOz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="scrollView" destination="MFM-gd-zg6" id="j3b-P0-bHV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="361"/>
+            <point key="canvasLocation" x="304.5" y="360.5"/>
         </scene>
     </scenes>
 </document>
